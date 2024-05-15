@@ -1,0 +1,13 @@
+// 匹配刷题网页
+        if (/\/student\/#\/courseInfo.*?/.test(window.location.href)) {
+            let isConfig = confirm("是否自动启动！，否则手动启动！");
+            // 如果是则启动
+            if (isConfig) {
+                const playBtn = document.querySelector(".vjs-big-play-button")
+                console.log(playBtn);
+                    playBtn.click();
+
+            }else {
+                alert("手动启动，点击播放按钮！");
+            }
+        }
